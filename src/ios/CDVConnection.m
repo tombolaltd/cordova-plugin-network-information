@@ -147,10 +147,10 @@
                                                  name:kReachabilityChangedNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateConnectionType:)
                                                  name:CTRadioAccessTechnologyDidChangeNotification object:nil];
-    if (UIApplicationDidEnterBackgroundNotification && UIApplicationWillEnterForegroundNotification) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onPause) name:UIApplicationDidEnterBackgroundNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onResume) name:UIApplicationWillEnterForegroundNotification object:nil];
-    }
+    // if (UIApplicationDidEnterBackgroundNotification && UIApplicationWillEnterForegroundNotification) {
+    //     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onPause) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    //     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onResume) name:UIApplicationWillEnterForegroundNotification object:nil];
+    // }
 }
 
 @end
